@@ -1,0 +1,12 @@
+در Termux:
+cd ~/storage/downloads
+rm -rf VideoToolsHub_PRO
+unzip -o VideoToolsHub_PRO.zip -d VideoToolsHub_PRO
+cd VideoToolsHub_PRO
+git init
+git config --global --add safe.directory /storage/emulated/0/Download/VideoToolsHub_PRO
+git add .
+git commit -m "Professional redesign"
+git branch -M main
+git remote add origin https://github.com/hardclinic01-web/VideoToolsHub2.git
+git push -u origin main --force
